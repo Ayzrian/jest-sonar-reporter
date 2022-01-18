@@ -1,5 +1,5 @@
 {
-  "name": "jest-sonar-reporter",
+  "name": "fixed-jest-sonar-reporter",
   "version": "2.0.0",
   "description": "A Sonar test reporter for Jest.",
   "keywords": [
@@ -21,20 +21,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/3dmind/jest-sonar-reporter.git"
+    "url": "https://github.com/Ayzrian/jest-sonar-reporter"
   },
   "author": "Christian Wlatschiha <c.wlatschiha@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/3dmind/jest-sonar-reporter/issues"
+    "url": "https://github.com/Ayzrian/jest-sonar-reporter/issues"
   },
-  "homepage": "https://github.com/3dmind/jest-sonar-reporter#readme",
+  "homepage": "https://github.com/Ayzrian/jest-sonar-reporter#readme",
   "engines": {
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "xml": "^1.0.1",
-    "jest-validate": "^24.5.0"
+    "xml": "^1.0.1"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
@@ -46,10 +45,13 @@
     "testEnvironment": "node",
     "reporters": [
       "default",
-      ["<rootDir>/index.js", {
-        "reportPath": "reports",
-        "indent": 4
-      }]
+      [
+        "<rootDir>/index.js",
+        {
+          "reportPath": "reports",
+          "indent": 4
+        }
+      ]
     ]
   },
   "jestSonar": {
